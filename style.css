@@ -1,0 +1,48 @@
+
+.btn {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    padding: 16px 24px;
+    text-align: center;
+    width: 15%;
+    float: right;
+    margin-right: 20px;
+}
+#hname{
+    display: inline-block;
+    padding: 0px 50px;   
+}
+.div1{
+    background-color: #ffffff;
+}
+.herodiv{
+    background-image: url('assets/Hero-bg.png');
+    display: grid;
+    align-items: center;
+    align-content: center;
+
+}
+.btn2{
+
+    background-color: #1A1A1A;
+    border-radius: 15px;
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    padding: 16px 24px;
+    text-align: center;
+    width: 15%;
+    margin-right: 20px;
+}

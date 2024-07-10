@@ -4,8 +4,420 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #ffffff;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #1A1A1A;
+}
+
+.btn {
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    color: #3B3B3B;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 24px;
+    text-align: center;
+}
+
+.herodiv {
+    background-image: url('assets/Hero-bg.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #1A1A1A;
+    padding: 100px 20px;
+}
+
+.herodiv img {
+    max-width: 100%;
+    height: auto;
+}
+
+.herodiv h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.herodiv p {
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.btn2 {
+    background-color: #1A1A1A;
+    border-radius: 15px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.whydiv {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.whydiv h1 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #1A1A1A;
+}
+
+.whydiv p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #1A1A1A;
+    margin-top: 0;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.imgtext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    gap: 20px;
+}
+
+.imgtext .text-content {
+    max-width: 50%;
+}
+
+.imgtext h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1A1A1A;
+}
+
+.imgtext p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #1A1A1A;
+    margin-top: 10px;
+}
+
+.btn3 {
+    background-color: #ffffff;
+    border-radius: 15px;
+    color: #000000;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 24px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.imgtext img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    gap: 20px;
+}
+
+.flex-container div {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+}
+
+.flex-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.flex-container h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1A1A1A;
+}
+
+.flex-container p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #1A1A1A;
+    margin-top: 10px;
+}
+
+.flex-container button {
+    background-color: #ffffff;
+    border-radius: 15px;
+    color: #000000;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 24px;
+    text-align: center;
+    margin-top: 20px;
+    border: 2px solid #1A1A1A;
+}
+
+.horizontal-box {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    margin: 20px 0;
+}
+
+.horizontal-box img {
+    width: 20%;
+    border-radius: 15px;
+}
+
+.horizontal-box .text-content {
+    width: 80%;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    margin-top: 60px;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/handshake.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer .text-content {
+    width: 80%;
+    max-width: 800px;
+}
+
+.footer h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.footer p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.footer input[type="text"] {
+    width: calc(100% - 150px);
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    margin-top: 10px;
+}
+
+.footer button {
+    background-color: #ffffff;
+    border-radius: 15px;
+    color: #000000;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 10px;
+    border: none;
+}
+.bottom-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 14px;
+}
+
+.bottom-bar .left-content {
+    flex: 1;
+}
+
+.bottom-bar .right-content {
+    display: flex;
+    gap: 10px;
+}
+
+.bottom-bar .right-content a {
+    display: block;
+    width: 32px; /* Adjust as needed */
+    height: 32px; /* Adjust as needed */
+}
+
+.bottom-bar .right-content img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Make the icons circular */
+}
+
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="header">
+            <h1 id="hname">Muinul I.</h1>
+            <button class="btn" role="button">Resume</button>
+        </div>
+
+        <div class="herodiv">
+            <img src="assets/Group.png" alt="hero" class="heroimg">
+            <h1 class="heroh1">"In the near future, I hope to become a Developer."</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora similique commodi distinctio omnis dicta placeat soluta exercitationem natus, vitae minus nulla cumque dolor.</p>
+            <button class="btn2" role="button">Contact with me</button>
+        </div>
+
+        <div class="whydiv">
+            <h1 class="whyh1">Why Web Development?</h1>
+            <p class="whytext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora similique commodi distinctio omnis dicta placeat soluta exercitationem natus, vitae minus nulla cumque dolor.</p>
+        </div>
+
+        <div class="imgtext">
+            <div class="text-content">
+                <h3>I will do coding and change the world</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora similique commodi distinctio omnis dicta placeat soluta exercitationem natus, vitae minus nulla cumque dolor.</p>
+                <button class="btn3" role="button">Learn more</button>
+            </div>
+            <img src="assets/Layer_1.png" alt="hero" class="img1">
+        </div>
+        
+        <div class="imgtext">
+            <img src="assets/Group 3.png" alt="hero" class="img1">
+            <div class="text-content">
+                <h3>I will help people by creating modern web systems</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora similique commodi distinctio omnis dicta placeat soluta exercitationem natus, vitae minus nulla cumque dolor.</p>
+                <button class="btn3" role="button">Learn more</button>
+            </div>
+        </div>
+        
+        <div class="imgtext">
+            <div class="text-content">
+                <h3>I will create modern web applications</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora similique commodi distinctio omnis dicta placeat soluta exercitationem natus, vitae minus nulla cumque dolor.</p>
+                <button class="btn3" role="button">Learn more</button>
+            </div>
+            <img src="assets/Group 3.png" alt="hero" class="img1">
+        </div>
+        
+        <div class="whydiv">
+            <h1 class="whyh1">My Skills</h1>
+            <p class="whytext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora similique commodi distinctio omnis dicta placeat soluta exercitationem natus, vitae minus nulla cumque dolor.</p>
+        </div>
+        
+        <div class="flex-container">
+            <div>
+                <img src="assets/html.png" alt="HTML">
+                <h3>HTML</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora similique commodi distinctio omnis dicta placeat soluta exercitationem natus, vitae minus nulla cumque dolor.</p>
+                <button>Learn more</button>
+            </div>
+            <div>
+                <img src="assets/css.png" alt="CSS">
+                <h3>CSS</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora similique commodi distinctio omnis dicta placeat soluta exercitationem natus, vitae minus nulla cumque dolor.</p>
+                <button>Learn more</button>
+            </div>
+            <div>
+                <img src="assets/js.png" alt="JavaScript">
+                <h3>JavaScript</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora similique commodi distinctio omnis dicta placeat soluta exercitationem natus, vitae minus nulla cumque dolor.</p>
+                <button>Learn more</button>
+            </div>
+        </div>
+        
+        <div class="whydiv">
+            <h1 class="whyh1">My Next Target</h1>
+            <p class="whytext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora similique commodi distinctio omnis dicta placeat soluta exercitationem natus, vitae minus nulla cumque dolor.</p>
+        </div>
+        
+        <div class="horizontal-box">
+            <img src="assets/react.png" alt="ReactJS" class="img1">
+            <div class="text-content">
+                <h3>ReactJS</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora similique commodi distinctio omnis dicta placeat soluta exercitationem natus, vitae minus nulla cumque dolor.</p>
+                <button class="btn3" role="button">Learn more</button>
+            </div>
+        </div>
+        
+        <div class="horizontal-box">
+            <img src="assets/nodejs.png" alt="NodeJS" class="img1">
+            <div class="text-content">
+                <h3>NodeJs</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora similique commodi distinctio omnis dicta placeat soluta exercitationem natus, vitae minus nulla cumque dolor.</p>
+                <button class="btn3" role="button">Learn more</button>
+            </div>
+        </div>
+        
+        <div class="horizontal-box">
+            <img src="assets/mongodb.png" alt="MongoDB" class="img1">
+            <div class="text-content">
+                <h3>MongoDB</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora similique commodi distinctio omnis dicta placeat soluta exercitationem natus, vitae minus nulla cumque dolor.</p>
+                <button class="btn3" role="button">Learn more</button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="text-content">
+                <h3>I need Support</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora similique commodi distinctio omnis dicta placeat soluta exercitationem natus, vitae minus nulla cumque dolor.</p>
+                <input type="text" placeholder="Suggest me any feedback for me">
+                <button role="button">Submit</button>
+            </div>
+        </div>
+    </div>
 </body>
+<footer class="bottom-bar">
+    <div class="left-content">
+        All credit reserves by muin
+    </div>
+    <div class="right-content">
+        <a href="https://www.facebook.com/yourprofile" target="_blank"><img src="assets/facebook.png" alt="Facebook"></a>
+        <a href="https://github.com/yourusername" target="_blank"><img src="assets/github.png" alt="GitHub"></a>
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><img src="assets/linkedin-icon 1.png" alt="LinkedIn"></a>
+    </div>
+</footer>
 </html>
