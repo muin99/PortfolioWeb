@@ -43,6 +43,8 @@ body {
     text-align: center;
     color: #1A1A1A;
     padding: 100px 20px;
+    margin-left: -10%;
+    margin-right: -10%;
 }
 
 .herodiv img {
@@ -73,6 +75,7 @@ body {
     padding: 16px 24px;
     text-align: center;
     margin-top: 20px;
+    text-decoration: none;
 }
 
 .whydiv {
