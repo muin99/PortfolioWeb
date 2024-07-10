@@ -21,14 +21,14 @@ body {
 .header h1 {
     margin: 0;
     font-size: 18px; 
-    color: #1A1A1A;
+    color: #333333;
 }
 
 .btn {
     background-color: transparent;
     border: 2px solid #1A1A1A;
     border-radius: 12px;
-    color: #3B3B3B;
+    color: #5a5a5a;
     cursor: pointer;
     font-size: 12px;
     font-weight: 600;
@@ -60,6 +60,7 @@ body {
     font-weight: 400;
     max-width: 800px;
     margin: 20px auto;
+    color: #5a5a5a;
 }
 
 .btn2 {
@@ -88,7 +89,7 @@ body {
 .whydiv p {
     font-size: 15px;
     font-weight: 400;
-    color: #1A1A1A;
+    color: #5a5a5a;
     margin-top: 0;
     max-width: 800px;
     margin: 20px auto;
@@ -115,7 +116,7 @@ body {
 .imgtext p {
     font-size: 13.5px; 
     font-weight: 400;
-    color: #1A1A1A;
+    color: #5a5a5a;
     margin-top: 10px;
 }
 
@@ -142,6 +143,9 @@ body {
     border-color: white;
     text-decoration: underline;
 }
+.btl a{
+    color: #000000;
+}
 .bts{
     background-color: #ffffff;
     border-radius: 15px;
@@ -159,6 +163,9 @@ body {
     max-width: 50%;
     height: auto;
     border-radius: 15px;
+}
+.text-content p{
+    color: #5a5a5a;
 }
 
 .flex-container {
@@ -192,7 +199,7 @@ body {
 .flex-container p {
     font-size: 13.5px; 
     font-weight: 400;
-    color: #1A1A1A;
+    color: #5a5a5a;
     margin-top: 10px;
 }
 
@@ -249,8 +256,8 @@ body {
     max-width: 800px;
 }
 
-.footer h3 {
-    font-size: 18px; 
+.footer h2 {
+    font-size: 22px; 
     font-weight: 600;
 }
 
@@ -258,6 +265,7 @@ body {
     font-size: 13.5px; 
     font-weight: 400;
     margin-top: 10px;
+    color: #c4c4c4;
 }
 
 .footer input[type="text"] {
