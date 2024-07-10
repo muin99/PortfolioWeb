@@ -27,7 +27,7 @@ body {
 .btn {
     background-color: transparent;
     border: 2px solid #1A1A1A;
-    border-radius: 12px;
+    border-radius: 8px;
     color: #5a5a5a;
     cursor: pointer;
     font-size: 12px;
@@ -122,7 +122,7 @@ body {
 
 .btn3 {
     background-color: #ffffff;
-    border-radius: 0px
+    border-radius: 0px;
     color: #000000;
     cursor: pointer;
     font-size: 12px; 
@@ -130,6 +130,7 @@ body {
     padding: 10px 30px;
     text-align: center;
     margin-top: 20px;
+    border-color: #313131;
 }
 .btl{
     background-color: #ffffff;
@@ -268,22 +269,23 @@ body {
     color: #c4c4c4;
 }
 
-.footer input[type="text"] {
-    width: calc(100% - 150px);
-    padding: 10px;
-    border-radius: 15px;
+.footer input {
+    width: 600px;
+    padding: 15px 20px;
+    border-radius: 8px;
     border: none;
-    margin-top: 10px;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 .footer button {
     background-color: #ffffff;
-    border-radius: 15px;
+    border-radius: 6px;
     color: #000000;
     cursor: pointer;
     font-size: 12px; 
     font-weight: 600;
-    padding: 10px 20px;
+    padding: 15px 20px;
     text-align: center;
     margin-top: 10px;
     border: none;
@@ -297,7 +299,7 @@ body {
     padding-left: 100px;
     background-color: #ffffff;
     color: #000000;
-    font-size: 10.5px;
+    font-size: 12px;
     margin-top: 100px;
 }
 
